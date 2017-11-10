@@ -1,0 +1,62 @@
+<VSPerformanceSession Version="1.00">
+  <Options>
+    <Solution>evolve.sln</Solution>
+    <CollectionMethod>Instrumentation</CollectionMethod>
+    <AllocationMethod>None</AllocationMethod>
+    <AddReport>true</AddReport>
+    <UniqueReport>Timestamp</UniqueReport>
+    <SamplingMethod>Cycles</SamplingMethod>
+    <CycleCount>10000000</CycleCount>
+    <PageFaultCount>10</PageFaultCount>
+    <SysCallCount>10</SysCallCount>
+    <SamplingCounter PlatformID="00000000" CounterID="0000000000000000" ReloadValue="00000000000f4240" />
+    <RelocateBinaries>false</RelocateBinaries>
+    <HardwareCounters EnableHWCounters="false" />
+    <EtwSettings>
+      <Provider ControlGuid="06b94d9a-b15e-456e-a4ef-37c984a2cb4b" Enabled="false" Flags="000000fe" Level="5" />
+      <Provider ControlGuid="1fbecc45-c060-4e7c-8a0e-0dbd6116181b" Enabled="false" Flags="000000fe" Level="5" />
+      <Provider ControlGuid="3a2a4e84-4c21-4981-ae10-3fda0d9b0f83" Enabled="false" Flags="000000fe" Level="5" />
+      <Provider ControlGuid="9e814aad-3204-11d2-9a82-006008a86939" Enabled="false" Flags="00000000" Level="0" />
+      <Provider ControlGuid="a1c2040e-8840-4c31-ba11-9871031a19ea" Enabled="false" Flags="000000fe" Level="5" />
+      <Provider ControlGuid="aff081fe-0247-4275-9c4e-021f3dc1da35" Enabled="false" Flags="ffffffff" Level="5" />
+      <Provider ControlGuid="e13c0d23-ccbc-4e12-931b-d9cc2eee27e4" Enabled="false" Flags="7fffffff" Level="5" />
+    </EtwSettings>
+  </Options>
+  <PreinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PreinstrumentEvent>
+  <PostinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PostinstrumentEvent>
+  <Binaries>
+    <ProjBinary>
+      <Path>Debug\evolve.exe</Path>
+      <ArgumentTimestamp>01/01/0001 00:00:00</ArgumentTimestamp>
+      <Instrument>true</Instrument>
+      <LaunchProject>true</LaunchProject>
+      <LaunchMethod>Executable</LaunchMethod>
+      <ExecutablePath>Debug\evolve.exe</ExecutablePath>
+      <StartupDirectory />
+      <NetAppHost>IIS</NetAppHost>
+      <PreinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PreinstrumentEvent>
+      <PostinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PostinstrumentEvent>
+      <ProjRef>{2EDCFF1C-4FB2-47B7-8006-83660614F14B}|evolve.vcproj</ProjRef>
+      <ProjPath>evolve.vcproj</ProjPath>
+      <ProjName>evolve</ProjName>
+    </ProjBinary>
+  </Binaries>
+  <Reports>
+    <Report>
+      <Path>evolve110625.vsp</Path>
+    </Report>
+  </Reports>
+  <Launches>
+    <ProjBinary>
+      <Path>:PB:{2EDCFF1C-4FB2-47B7-8006-83660614F14B}|evolve.vcproj</Path>
+    </ProjBinary>
+  </Launches>
+</VSPerformanceSession>
